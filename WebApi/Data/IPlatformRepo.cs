@@ -12,4 +12,5 @@ public interface IPlatformRepo
     Task<Platform> CreatePlatformAsync(Platform platform);
     Task<Platform?> GetPlatformByIdAsync(string id);
     Task<IEnumerable<Platform>> GetAllPlatformsAsync();
+    Task DeletePlatform(string id);
 }
